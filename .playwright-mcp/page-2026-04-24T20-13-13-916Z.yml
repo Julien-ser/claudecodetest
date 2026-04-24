@@ -1,0 +1,63 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e57]: Create a user profile card component
+            - img [ref=e60]
+          - generic [ref=e81]:
+            - img [ref=e84]
+            - generic [ref=e89]:
+              - generic [ref=e92]: Creating App.jsx
+              - separator [ref=e93]
+              - generic [ref=e96]: Creating UserProfileCard.jsx
+              - separator [ref=e97]
+              - generic [ref=e98]:
+                - paragraph [ref=e99]: "Done. Created a user profile card with:"
+                - list [ref=e100]:
+                  - listitem [ref=e101]: Circular avatar with border
+                  - listitem [ref=e102]: Name, role, location, and bio
+                  - listitem [ref=e103]: Followers/following stats
+                  - listitem [ref=e104]: Follow and Message action buttons
+                  - listitem [ref=e105]: Warm stone/rose/amber color palette with intentional typography hierarchy
+                  - listitem [ref=e106]: Lucide icons for visual interest
+        - generic [ref=e20]:
+          - textbox "Describe the React component you want to create..." [ref=e21]
+          - button [disabled] [ref=e22]:
+            - img [ref=e23]
+    - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - tablist [ref=e31]:
+          - tab "Preview" [selected] [ref=e32]
+          - tab "Code" [ref=e33]
+        - generic [ref=e34]:
+          - button "Sign In" [ref=e35]
+          - button "Sign Up" [ref=e36]
+      - iframe [ref=e80]:
+        - generic [ref=f5e8]:
+          - img "Alexandra Chen" [ref=f5e10]
+          - generic [ref=f5e11]:
+            - heading "Alexandra Chen" [level=2] [ref=f5e12]
+            - paragraph [ref=f5e13]: Product Designer
+          - generic [ref=f5e14]:
+            - img [ref=f5e15]
+            - generic [ref=f5e18]: San Francisco, CA
+          - paragraph [ref=f5e19]: Crafting digital experiences that matter
+          - generic [ref=f5e20]:
+            - generic [ref=f5e21]:
+              - paragraph [ref=f5e22]: 2,847
+              - paragraph [ref=f5e23]: Followers
+            - generic [ref=f5e24]:
+              - paragraph [ref=f5e25]: "342"
+              - paragraph [ref=f5e26]: Following
+          - generic [ref=f5e27]:
+            - button "Follow" [ref=f5e28] [cursor=pointer]:
+              - img [ref=f5e29]
+              - text: Follow
+            - button "Message" [ref=f5e31] [cursor=pointer]:
+              - img [ref=f5e32]
+              - text: Message
+  - alert [ref=e47]
