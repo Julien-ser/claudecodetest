@@ -14,6 +14,7 @@ import { CodeEditor } from "@/components/editor/CodeEditor";
 import { PreviewFrame } from "@/components/preview/PreviewFrame";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HeaderActions } from "@/components/HeaderActions";
+import { cn } from "@/lib/utils";
 
 interface MainContentProps {
   user?: {
@@ -76,11 +77,13 @@ export function MainContent({ user, project }: MainContentProps) {
 
                 {/* Content Area */}
                 <div className="flex-1 overflow-hidden bg-neutral-50">
-                  {activeView === "preview" ? (
-                    <div className="h-full bg-white">
-                      <PreviewFrame />
-                    </div>
-                  ) : (
+                  {/* Preview - always mounted so the iframe never loses state and
+                      can't steal focus when the user clicks the Code tab */}
+                  <div className={cn("h-full bg-white", activeView !== "preview" && "hidden")}>
+                    <PreviewFrame />
+                  </div>
+
+                  {activeView === "code" && (
                     <ResizablePanelGroup
                       direction="horizontal"
                       className="h-full"
